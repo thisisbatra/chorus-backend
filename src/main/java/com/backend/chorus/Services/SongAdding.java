@@ -15,10 +15,12 @@ public class SongAdding {
     private SongAddRepo objSongAddRepo;
 
     public Song saveSong(Song objSong){
+
         return objSongAddRepo.save(objSong);
     }
 
     public List<Song> saveAllSongs(List<Song> objSongList){
+
         return (List<Song>)objSongAddRepo.saveAll(objSongList);
     }
 }

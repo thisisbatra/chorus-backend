@@ -9,8 +9,9 @@ public class CorsConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
+        String[] origins={"https://chorusplay.vercel.app","http://localhost:3000"};
         registry.addMapping("/**") // Allows all paths
-                .allowedOrigins("https://chorusplay.vercel.app") // Replace with your frontend's URL
+                .allowedOrigins(origins) // Replace with your frontend's URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // HTTP methods you want to allow
                 .allowedHeaders("*") // Allow all headers
                 .allowCredentials(true); // Allow credentials such as cookies

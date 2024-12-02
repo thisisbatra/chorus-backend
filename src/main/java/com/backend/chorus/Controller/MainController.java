@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@CrossOrigin(origins = "https://chorusplay.vercel.app")
+@CrossOrigin(origins = {"http://localhost:3000","https://chorusplay.vercel.app"})
 @RestController
 public class MainController {
     
